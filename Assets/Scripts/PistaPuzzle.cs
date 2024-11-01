@@ -6,8 +6,9 @@ using UnityEngine.UI;
 
 public class SliderPuzzle : MonoBehaviour
 {
-    public GameObject textoPista;
-    public GameObject botonPuzzleToogles;
+    public Button botonPuzzleB;
+    public Sprite imagenbotonPuzzleB;
+    public GameObject fotopista;
     Boolean resuelto = false;
     public int tamañocuadricula = 3;
     public List<Button> piezas;
@@ -69,9 +70,20 @@ public class SliderPuzzle : MonoBehaviour
             piezas[3].gameObject.name=="Boton4" && piezas[4].gameObject.name == "Boton5" && piezas[5].gameObject.name == "Boton6" &&
             piezas[6].gameObject.name=="Boton7" && piezas[7].gameObject.name == "Boton8") {
             Debug.Log("ESTA RESUELTO");
-            botonPuzzleToogles.SetActive(true);
-            textoPista.SetActive(true);
+
+            botonPuzzleB.image.sprite = imagenbotonPuzzleB;
+            StartCoroutine(EsperarYAccion(1.5f));
         }
         return true;
+    }
+
+    private IEnumerator EsperarYAccion(float segundos)
+    {
+        yield return new WaitForSeconds(segundos); // Esperar el tiempo especificado
+        for (int i = 0; i < piezas.Count; i++)
+        {
+            Destroy(piezas[i].gameObject);
+        }
+        fotopista.SetActive(true);
     }
 }

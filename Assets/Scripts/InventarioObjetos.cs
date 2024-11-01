@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class InventarioObjetos : MonoBehaviour
 {
+    private GameObject botonEspejo;
+    private GameObject espejo;
     public GameObject ultimoMensaje;
     public GameObject ActivarSiguiente;
     public Button btninventario;
@@ -53,6 +55,10 @@ public class InventarioObjetos : MonoBehaviour
         if (item.tag == "piojo"){
             objetos[4].SetActive(true);
             Destroy(item);
+
+            StartCoroutine(esperarEspejo(2));
+           
+
         }if (item.tag == "langosta"){
             objetos[5].SetActive(true);
             Destroy(item);
@@ -67,5 +73,15 @@ public class InventarioObjetos : MonoBehaviour
             ultimoMensaje.SetActive(true);
             ActivarSiguiente.SetActive(true);
         }
+    }
+
+    private IEnumerator esperarEspejo(float tiempo)
+    {
+        yield return new WaitForSeconds(tiempo);
+        espejo = GameObject.Find("Canvas-Espejo");
+        espejo.SetActive(false);
+
+        botonEspejo = GameObject.Find("espejotocar");
+        Destroy(botonEspejo);
     }
 }

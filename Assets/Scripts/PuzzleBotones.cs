@@ -7,32 +7,38 @@ using UnityEngine.UIElements;
 
 public class PuzzleBotones : MonoBehaviour
 {
+    public GameObject puzzleactual;
     public GameObject mensajeFinal;
     public GameObject botonSiguienteEscena;
     public List<UnityEngine.UI.Toggle> toggles;
+    public List<UnityEngine.UI.Button> botones;
     private int indicetactual;
     void Start()
     {
         //Desactivarlos todos al inicio
         Desactivar();
 
-        for (int i = 0; i < toggles.Count; i++) {
-            //Cambiar el nombre del toggle por el indice toggle3-->1.
-            toggles[i].name = i.ToString();
-            toggles[i].onValueChanged.AddListener(revisar);
+
+        for (int i = 0; i < botones.Count; i++) { 
+            botones[i].name = i.ToString();
+            int index = i;
+            botones[i].onClick.AddListener(() =>revisar(index));
         }
+
        
     }
 
-    void revisar(bool encendido) {
-        int indice = int.Parse(UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.name);
-        if (encendido) {
-            if (indice == indicetactual)
+    void revisar(int index) {
+        toggles[index].isOn = true;
+
+
+            if (index == indicetactual)
             {
                 indicetactual++;
                 if (indicetactual >= toggles.Count)
                 {
                     botonSiguienteEscena.SetActive(true);
+                puzzleactual.SetActive(false);
                     mensajeFinal.SetActive(true);
                     Debug.Log("COMPLETADO");
                 }
@@ -42,7 +48,6 @@ public class PuzzleBotones : MonoBehaviour
                 indicetactual = 0;
             }
         }
-    }
 
     public void Desactivar() {
         for (int i = 0; i < toggles.Count; i++)
@@ -51,11 +56,4 @@ public class PuzzleBotones : MonoBehaviour
         }
     }
 
-    public void ActivarToggle(UnityEngine.UI.Toggle toggle) {
-        //toggle.isOn = !toggle.isOn;
-    }
-    void Update()
-    {
-        
-    }
 }
