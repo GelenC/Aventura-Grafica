@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEditor.Progress;
 
 public class InventarioObjetos : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class InventarioObjetos : MonoBehaviour
     public Button btninventario;
     public GameObject panelInventario;
     public List<GameObject> objetos;
+    public List<GameObject> objetosMuestra;
 
     /*
        void Start()
@@ -38,22 +40,27 @@ public class InventarioObjetos : MonoBehaviour
     public void ActivarItem(GameObject item) {
         if (item.tag=="rana") {
             objetos[0].SetActive(true);
-            Destroy(item);
+            objetosMuestra[0].SetActive(false);
+            Destroy(item);  
         }
         if (item.tag == "granizo"){
            objetos[1].SetActive(true);
+            objetosMuestra[1].SetActive(false);
             Destroy(item);
         }
         if (item.tag == "sangre"){
             objetos[2].SetActive(true);
+            objetosMuestra[2].SetActive(false);
             Destroy(item);
         }
         if (item.tag == "mosca") {
             objetos[3].SetActive(true);
+            objetosMuestra[3].SetActive(false);
             Destroy(item);
         }
         if (item.tag == "piojo"){
             objetos[4].SetActive(true);
+            objetosMuestra[4].SetActive(false);
             Destroy(item);
 
             StartCoroutine(esperarEspejo(2));
@@ -61,9 +68,16 @@ public class InventarioObjetos : MonoBehaviour
 
         }if (item.tag == "langosta"){
             objetos[5].SetActive(true);
+            objetosMuestra[5].SetActive(false);
+            Destroy(item);
+
+        }if (item.tag =="vacap"){
+            objetos[6].SetActive(true);
+            objetosMuestra[6].SetActive(false);
             Destroy(item);
         }
-        int objetosActivos=0;
+
+       int objetosActivos=0;
         for (int i = 0; i < objetos.Count; i++) {
             if (objetos[i].activeSelf == true) {
                 objetosActivos++;

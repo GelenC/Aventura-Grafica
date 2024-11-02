@@ -10,14 +10,21 @@ public class CambiarEsc : MonoBehaviour
     private Jugador jugador;
     public Text nombre;
     public Text profesion;
+    public GameObject panelInicio;
+    public GameObject mensaje1;
     void Start() {
+        panelInicio.SetActive(true);
+        StartCoroutine(EsperarYQuitar(4f));
         jugador = GuardarDatos.cargar();
         nombre.text = jugador.nombre;
         profesion.text = jugador.profesion;
+
+        StartCoroutine(Esperarmensaje1(6f));
     }
     public void CambiarEscena(int num) {
         SceneManager.LoadScene(num);
     }
+
     public void ActivarBoton(GameObject siguiente) {
         siguiente.SetActive(true);
     }
@@ -36,5 +43,16 @@ public class CambiarEsc : MonoBehaviour
     public void ActivarEspejo() { 
     espejo.SetActive(true);
     }
+    private IEnumerator EsperarYQuitar(float tiempo)
+    {
+        yield return new WaitForSeconds(tiempo);
+        panelInicio.SetActive(false);
 
+    }
+    private IEnumerator Esperarmensaje1(float tiempo)
+    {
+        yield return new WaitForSeconds(tiempo);
+        mensaje1.SetActive(true);
+
+    }
 }
