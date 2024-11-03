@@ -6,6 +6,11 @@ using static UnityEditor.Progress;
 
 public class InventarioObjetos : MonoBehaviour
 {
+    public GameObject MRana;
+    public GameObject MPiojo;
+    public GameObject MLangosta;
+    public GameObject MSangre;
+    public GameObject MMosca;
     private GameObject botonEspejo;
     private GameObject espejo;
     public GameObject ultimoMensaje;
@@ -41,6 +46,7 @@ public class InventarioObjetos : MonoBehaviour
         if (item.tag=="rana") {
             objetos[0].SetActive(true);
             objetosMuestra[0].SetActive(false);
+            MRana.SetActive(true);
             Destroy(item);  
         }
         if (item.tag == "granizo"){
@@ -51,16 +57,19 @@ public class InventarioObjetos : MonoBehaviour
         if (item.tag == "sangre"){
             objetos[2].SetActive(true);
             objetosMuestra[2].SetActive(false);
+            MSangre.SetActive(true);
             Destroy(item);
         }
         if (item.tag == "mosca") {
             objetos[3].SetActive(true);
             objetosMuestra[3].SetActive(false);
+            MMosca.SetActive(true);
             Destroy(item);
         }
         if (item.tag == "piojo"){
             objetos[4].SetActive(true);
             objetosMuestra[4].SetActive(false);
+            MPiojo.SetActive(true);
             Destroy(item);
 
             StartCoroutine(esperarEspejo(2));
@@ -69,6 +78,7 @@ public class InventarioObjetos : MonoBehaviour
         }if (item.tag == "langosta"){
             objetos[5].SetActive(true);
             objetosMuestra[5].SetActive(false);
+            MLangosta.SetActive(true);
             Destroy(item);
 
         }if (item.tag =="vacap"){
