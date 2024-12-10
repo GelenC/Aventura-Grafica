@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class SliderPuzzle : MonoBehaviour
 {
+    public GameObject imagenref;
     public Button botonPuzzleB;
     public Sprite imagenbotonPuzzleB;
     public GameObject fotopista;
@@ -69,9 +70,10 @@ public class SliderPuzzle : MonoBehaviour
         if (piezas[0].gameObject.name=="Boton1" && piezas[1].gameObject.name == "Boton2" && piezas[2].gameObject.name == "Boton3" &&
             piezas[3].gameObject.name=="Boton4" && piezas[4].gameObject.name == "Boton5" && piezas[5].gameObject.name == "Boton6" &&
             piezas[6].gameObject.name=="Boton7" && piezas[7].gameObject.name == "Boton8") {
-            Debug.Log("ESTA RESUELTO");
-
-            botonPuzzleB.image.sprite = imagenbotonPuzzleB;
+            botonPuzzleB.interactable = true; //Activar el puzzle dependiente
+            
+            botonPuzzleB.image.sprite = imagenbotonPuzzleB; 
+            imagenref.SetActive(false);
             StartCoroutine(EsperarYAccion(1.5f));
         }
         return true;

@@ -6,9 +6,10 @@ using UnityEngine.SceneManagement;
 //AUNQUE EL SCRIP SE LLAMA CAMBIAR ESCENA, TAMBIEN SE USA PARA DESBLOQUEAR LOS PUZZLES Y PISTAS Y MOSTRAR LA INFO DEL JUGADOR.
 public class CambiarEsc : MonoBehaviour
 {
+    public GameObject panelBloqueo;
+    private Jugador jugador = new Jugador();
     public GameObject musica;
     public GameObject espejo;
-    private Jugador jugador;
     public Text nombre;
     public Text profesion;
     public GameObject panelInicio;
@@ -45,6 +46,11 @@ public class CambiarEsc : MonoBehaviour
     public void ActivarEspejo() { 
     espejo.SetActive(true);
     }
+    public void DesactivarBloqueo()
+    {
+        panelBloqueo.SetActive(false);
+    }
+
     private IEnumerator EsperarYQuitar(float tiempo)
     {
         yield return new WaitForSeconds(tiempo);

@@ -27,6 +27,10 @@ public class EscribirTexto : MonoBehaviour
     public GameObject dialogoJ3;
     public GameObject dialogoJ4;
 
+    public InputField nombreInput;
+    public Dropdown profesionDrop;
+    public GameObject validacionmensaje;
+
 
     void Start()
     {
@@ -46,16 +50,27 @@ public class EscribirTexto : MonoBehaviour
         dialogoG2.SetActive(false);
         formulario.SetActive(true);
     }
-    public void ActivarDatosJugador(GameObject panelJugador) { 
-        panelJugador.SetActive(true);
+    public void ActivarDatosJugador(GameObject panelJugador) {     
+        if (!string.IsNullOrWhiteSpace(nombreInput.text) && profesionDrop.value != 0)
+        {
+            panelJugador.SetActive(true);
+        }
     }
 
     //Vuelve a la conversación.
     public void _3CambiaDialogoForm_G3() {
-        textoconnombre.text = "Bueno " + nombre.text + " por si no sabías, la casa ha estado custodiada desde hace un tiempo... " +
-            "\r\nLuego una serie de incidentes, la poca familia que aún la habitaba se mudó muy lejos...";
-        formulario.SetActive(false);
-        dialogoG3.SetActive(true);
+        if (!string.IsNullOrWhiteSpace(nombreInput.text) && profesionDrop.value != 0)
+        {
+            textoconnombre.text = "Bueno " + nombre.text + " por si no sabías, la casa ha estado custodiada desde hace un tiempo... " +
+           "\r\nLuego una serie de incidentes, la poca familia que aún la habitaba se mudó muy lejos...";
+            formulario.SetActive(false);
+            dialogoG3.SetActive(true);
+            validacionmensaje.SetActive(false);
+        }
+        else { 
+        validacionmensaje.SetActive(true);
+        }
+       
     }
 
     public void _4CambiarDialogoG3OpcionA() { 

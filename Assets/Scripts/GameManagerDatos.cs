@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 using System;
-public class GameManager : MonoBehaviour
+using static UnityEngine.Rendering.DebugUI;
+public class GameManagerDatos : MonoBehaviour
 {
-    public static GameManager instance;
+    public static GameManagerDatos instance;
     private Jugador jugador = new Jugador();
     public InputField nombreInput;
     public Dropdown profesionDrop;
@@ -27,11 +28,16 @@ public class GameManager : MonoBehaviour
     //Llamar al metodo guardar para convertir en Json
     public void SaveGame()
     {
-        jugador.nombre = nombreInput.text;
-        jugador.profesion = profesionDrop.options[profesionDrop.value].text;
-       /* jugador.nombre = "Pablo";
-        jugador.profesion = "Policía";*/
-        GuardarDatos.guardar(jugador);
+        /*(!string.IsNullOrWhiteSpace(nombreInput.text) && profesionDrop.value != 0 para asegurase de que 
+         esté elegida una opción válida*/
+       
+        if (!string.IsNullOrWhiteSpace(nombreInput.text) && profesionDrop.value != 0)
+        {
+            jugador.nombre = nombreInput.text;
+            jugador.profesion = profesionDrop.options[profesionDrop.value].text;
+            GuardarDatos.guardar(jugador);
+        }
+         
     }
 
     //Sacar los datos del Json
@@ -43,14 +49,18 @@ public class GameManager : MonoBehaviour
 
     //METODOS PARA LOS BOTONES
     public void Nombre(Text nombre) {
-        nombre.text = jugador.nombre;
+        if (!string.IsNullOrWhiteSpace(nombreInput.text) && profesionDrop.value != 0)
+        {
+            nombre.text = jugador.nombre;
+        } 
     }
     public void Profesion(Text profesion)
     {
-        profesion.text = jugador.profesion;
-        guardar.SetActive(false);
-        regresar.SetActive(true);
-        avanzar.SetActive(true);
+        if (!string.IsNullOrWhiteSpace(nombreInput.text) && profesionDrop.value != 0)
+        {
+            profesion.text = jugador.profesion;
+        }
+       
     }
     public void ActivarRegresar() { 
         guardar.SetActive(true);

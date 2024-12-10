@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using static UnityEditor.Progress;
 
 public class InventarioObjetos : MonoBehaviour
 {
+    private GameObject espejoImagen;
     public GameObject MRana;
     public GameObject MPiojo;
     public GameObject MLangosta;
@@ -19,16 +19,6 @@ public class InventarioObjetos : MonoBehaviour
     public GameObject panelInventario;
     public List<GameObject> objetos;
     public List<GameObject> objetosMuestra;
-
-    /*
-       void Start()
-       {
-       }
-
-       void Update()
-       {
-
-       }*/
 
     public void AbrirInventario()
     {
@@ -72,6 +62,8 @@ public class InventarioObjetos : MonoBehaviour
             MPiojo.SetActive(true);
             Destroy(item);
 
+            espejoImagen = GameObject.Find("relucir");
+            Destroy(espejoImagen);
             StartCoroutine(esperarEspejo(2));
            
 
