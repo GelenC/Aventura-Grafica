@@ -62,7 +62,7 @@ public class EscribirTexto : MonoBehaviour
         if (!string.IsNullOrWhiteSpace(nombreInput.text) && profesionDrop.value != 0)
         {
             textoconnombre.text = "Bueno " + nombre.text + " por si no sabías, la casa ha estado custodiada desde hace un tiempo... " +
-           "\r\nLuego una serie de incidentes, la poca familia que aún la habitaba se mudó muy lejos...";
+           "\r\nLuego de una serie de incidentes, la poca familia que aún la habitaba se mudó muy lejos...";
             formulario.SetActive(false);
             dialogoG3.SetActive(true);
             validacionmensaje.SetActive(false);

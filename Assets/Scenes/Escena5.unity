@@ -1196,7 +1196,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 1860.89}
+  m_SizeDelta: {x: 0, y: 1612.52}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &553365996
 MonoBehaviour:
@@ -2730,7 +2730,7 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1097706328}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.57416165}
+  m_AnchorMin: {x: 0, y: 0.5085714}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -4211,7 +4211,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1185447236}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.42583838
+  m_Size: 0.49142858
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4614,8 +4614,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 376.172, y: -930.445}
-  m_SizeDelta: {x: 752.344, y: 1860.89}
+  m_AnchoredPosition: {x: 376.172, y: -806.26}
+  m_SizeDelta: {x: 752.344, y: 1612.52}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1965962600
 MonoBehaviour:
@@ -4637,25 +4637,21 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\"Los Fragmentos del Pasado\"\r\n\r\nTe has atrevido a cruzar el umbral
-    y recoger el \xFAltimo rastro de tus propios actos. El libro frente a ti  es
-    una confesi\xF3n y un registro detallado de todo lo que llevaste a cabo, cada
-    p\xE1gina llena oscuridad y obsesi\xF3n.\r\n\r\nAtra\xEDdo por las promesas de
-    poder y secretos ocultos, te sumergiste cada vez m\xE1s profundo en sus ense\xF1anzas,
-    elegiste a tus v\xEDctimas, aquellas dos ni\xF1as. Cre\xEDste que ser\xEDan una
-    ofrenda perfecta, debilitaste su esp\xEDritu hasta que la vida comenz\xF3 a desvanecerse
-    de sus cuerpos.\r\n\r\nTodo qued\xF3 registrado en el libro. Cada paso, p\xE1gina
-    tras p\xE1gina, anotaste tus observaciones, los cambios en su comportamiento
-    y el momento exacto en el que viste sus esp\xEDritus quebrantarse. \n\nCada p\xE1gina
-    es un recordatorio de las almas que destruiste, del precio que pagaste para satisfacer
-    tu obsesi\xF3n. Las puertas de esta casa te han dejado entrar, pero la oscuridad
-    que invocaste no est\xE1 dispuesta a dejarte ir. El eco de aquellas ni\xF1as
-    y la agon\xEDa de su madre han sido preservados, atrapados entre estas paredes
-    que ahora te observan, revelando lo que realmente eres.\r\n\r\nAl final, te enfrentas
-    a la verdad. No eres un buscador de justicia ni un curioso en busca de respuestas.
-    Eres el culpable y este libro es tu condena. Cuando tus ojos se posan en su \xFAltima
-    p\xE1gina, lo \xFAnico que queda es una sola pregunta, un susurro de lo que has
-    dejado atr\xE1s:\r\n\"\xBFQu\xE9 has hecho?\"...\r\n\n"
+  m_text: "\"Los Fragmentos del Pasado\"\r\n\r\nHas recogido el \xFAltimo rastro
+    de tus propios actos. El libro frente a ti  es una confesi\xF3n de todo lo que
+    has  llevado a cabo, cada p\xE1gina llena tu oscuridad y obsesi\xF3n.\r\n\r\nAtra\xEDdo
+    por las promesas de poder, te sumergiste cada vez m\xE1s profundo en tus delirios
+    espirituales y aquellas dos ni\xF1as eran una ofrenda perfecta.\n\nTu debilitaste
+    su esp\xEDritu hasta que la vida comenz\xF3 a desvanecerse de sus cuerpos.\r\n\r\nCada
+    paso, p\xE1gina tras p\xE1gina, cada observaci\xF3n,  el momento exacto en el
+    que viste sus esp\xEDritus quebrantarse, todo es un recordatorio de las almas
+    que destruiste, del precio que pagaste para satisfacer tu propia f\xE9.\n\nLas
+    puertas de esta casa te han dejado entrar y el eco de aquellas almas han sido
+    preservados entre estas paredes que ahora te observan, revelando lo que realmente
+    eres.\r\n\r\nAl final, te enfrentas a la verdad, este libro es tu condena y cuando
+    tus ojos se posen en su \xFAltima p\xE1gina, lo \xFAnico que quedar\xE1 es una
+    sola pregunta, un susurro de lo que has dejado atr\xE1s:\r\n\n\"\xBFQu\xE9 has
+    hecho?\"...\r\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -4689,7 +4685,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0

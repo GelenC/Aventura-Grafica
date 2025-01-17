@@ -628,12 +628,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Este lugar aun se considera una escena del crimen. \n\nDesde la desaparici\xF3n
+  m_text: "Este lugar aun es una escena del crimen. \n\nDesde la desaparici\xF3n
     de aquellas dos ni\xF1as, la polic\xEDa no ha dejado de venir aqu\xED. \xA1No
     es conveniente que nadie entre a esta casa!\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -696,7 +696,7 @@ MonoBehaviour:
   m_margin: {x: -276.16248, y: 0, z: -354.44458, w: -317.69476}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &42334291
@@ -1237,7 +1237,7 @@ MonoBehaviour:
   m_text: "Por eso no est\xE1 permitido el paso\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1952,7 +1952,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -774, y: -532}
+  m_AnchoredPosition: {x: -774, y: -468}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &401977809
@@ -1968,7 +1968,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5849056, g: 0.5849056, b: 0.5849056, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2488,7 +2488,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7610062, g: 0.7610062, b: 0.7610062, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2711,7 +2711,7 @@ MonoBehaviour:
     conozco a los due\xF1os... ellos me autorizaron."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3444,8 +3444,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -691.82, y: -165.44}
-  m_SizeDelta: {x: 100.68, y: 99.85}
+  m_AnchoredPosition: {x: -618.6067, y: -241.25412}
+  m_SizeDelta: {x: 131.1816, y: 92.3521}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &671048076
 MonoBehaviour:
@@ -3460,14 +3460,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.69182384, g: 0.68529713, b: 0.68529713, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b616667fe50113347bd7bd2d95aca18b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b788b422a9d97ac4b9de36fb5334f927, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3542,13 +3542,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Desde entonces todo ha sido un desastre, ha habido una b\xFAsqueda exhaustiva,
-    han interrogado a todo el mundo... \n\n\xA1Incluso se llevaron al se\xF1or como
-    sospechoso durante los primeros d\xEDas!... \nPero nadie ha podido dar con el
-    culpable ni con el paradero de las ni\xF1as.\r\n"
+  m_text: "Desde entonces todo ha sido un desastre por aqu\xED, han habido b\xFAsquedas
+    exhaustivas,  interrogatorios y nada ha cambiado... \n\nNadie ha podido dar con
+    el culpable ni con el paradero de las ni\xF1as.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3611,7 +3610,7 @@ MonoBehaviour:
   m_margin: {x: -276.16248, y: 0, z: -354.44458, w: -317.69476}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &673361203
@@ -4623,7 +4622,7 @@ MonoBehaviour:
   m_text: "Nunca te hab\xEDa visto por aqu\xED...\n\xBFQuien eres tu?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5035,7 +5034,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.69182384, g: 0.69182384, b: 0.69182384, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5516,7 +5515,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -17, y: -228.2041}
+  m_AnchoredPosition: {x: -17, y: -130}
   m_SizeDelta: {x: 319.0466, y: 115.9391}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1165856865
@@ -5532,7 +5531,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.93710685, g: 0.93710685, b: 0.93710685, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7745,6 +7744,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3999017a83f07fd4ab815308b1c04d80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  panelBloqueo: {fileID: 0}
   musica: {fileID: 298649003}
   espejo: {fileID: 1133790054}
   nombre: {fileID: 1813780244}
@@ -8829,7 +8829,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8930817, g: 0.83972144, b: 0.83972144, a: 0.9490196}
+  m_Color: {r: 0.66666657, g: 0.66666657, b: 0.66666657, a: 0.9490196}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -8989,9 +8989,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Seg\xFAn lo que dicen, antes de que ocurriese la tragedia las ni\xF1as
-    parec\xEDan estar muy enfermas, no pod\xEDan comer sin vomitar, se mostraban
-    agresivas y ten\xEDan problemas de la vista y constantes dolores de cabeza...\n\nLos
-    padres preocupados las llevaron al m\xE9dico, pero nada cambiaba..."
+    parec\xEDan estar muy enfermas, no com\xEDan, se mostraban agresivas  y sufr\xEDan
+    constantes dolores de cabeza...\n\nLos padres intentaron de todo, pero nadie
+    pudo ayudarlas..."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -9057,7 +9057,7 @@ MonoBehaviour:
   m_margin: {x: -276.16248, y: 0, z: -354.44458, w: -317.69476}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &2017699617
@@ -9451,7 +9451,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -41, y: 153}
+  m_AnchoredPosition: {x: -41, y: 160}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2131502752
@@ -9474,10 +9474,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Pero una noche, el padre sali\xF3 de la casa asustado a pedir ayuda porque
-    sus hijas no despertaban, sin embargo, cuando el m\xE9dico lleg\xF3, las ni\xF1as
-    no estaban y lo peor, la madre hab\xEDa sido atacada y apu\xF1alada en el estomago...
-    \n\nAntes de morir lo ultimo que dijo fue \"La prueba est\xE1 en el libro\""
+  m_text: "Y una d\xEDa, las ni\xF1as no despertaron... El padre sali\xF3 de la casa
+    tan solo unos minutos para pedir ayuda, pero cuando el m\xE9dico lleg\xF3, las
+    ni\xF1as no estaban y su madre yac\xEDa desangrandose en el suelo del sal\xF3n...
+    \n\nAlgunos dicen que en su delirio rogaba con urgencia por un libro, seg\xFAn
+    ella  \"La culpa siempre estuvo escrita en \xE9l\""
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -9540,10 +9541,10 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -276.16248, y: 0, z: -354.44458, w: -317.69476}
+  m_margin: {x: -276.16248, y: 0, z: -377.90747, w: -317.69476}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &2131502753
